@@ -1,0 +1,484 @@
+@charset "utf-8";
+#wrap{
+    width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+#header{
+    height: 100px;
+    background-color: #ebebeb;
+}
+#header .logo{
+    float: left;
+}
+#header .nav{
+    float: right;
+}
+#header .nav > ul{}
+#header .nav > ul > li{
+    float: left;
+    position: relative;
+}
+#header .nav > ul > li > a{
+    display: block;
+    width: 150px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 24px;
+    font-weight: 800;
+}
+#header .nav > ul > li > .submenu{
+    /* display: none; */
+    position: absolute;
+    left: 0;
+    top: 100px;
+    z-index: 10;
+    display: none;
+}
+#header .nav > ul > li > .submenu > li{}
+#header .nav > ul > li > .submenu > li > a{
+    display: block;
+    width: 150px;
+    text-align: center;
+    line-height: 60px;
+    font-weight: 700;
+    font-size: 16px;
+}
+#header .nav > ul > li > .submenu > li > a:hover{
+    color: #000;
+}
+#header .navbg{
+    width: 100%;
+    height: 240px;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    left: 0;
+    top: 100px;
+    z-index: 9;
+    display: none;
+}
+
+#banner{
+    height: 600px;
+}
+#banner .banner{
+    position: relative;
+}
+#banner .banner div{}
+#banner .banner div a{
+    display: block;
+    width: 150px;
+    height: 50px;
+    border: 1px solid #ae2cf1;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+}
+#banner .banner div .a1{
+    position: absolute;
+    bottom: 50px;
+    right: 38%;
+    background-color: #fff;
+    color: #ae2cf1;
+    transition: all 0.4s;
+}
+#banner .banner div .a1:hover{
+    background-image: linear-gradient(90deg,#7776ff,#ae2cf1);
+    border: 1px solid rgba(0, 0, 0, 0);
+    color: #fff;
+}
+#banner .banner div .a2{
+    position: absolute;
+    bottom: 50px;
+    left: 38%;
+    border: 0;
+    background-image: linear-gradient(90deg,#7776ff,#ae2cf1);
+    color: #fff;
+    transition: all 0.4s;
+}
+#banner .banner div .a2:hover{
+    background-image: linear-gradient(90deg,#6767da,#8b23be);
+}
+
+#cont1{
+    height: 500px;
+    margin-left: 40px;
+    padding: 60px 0 60px 0;
+}
+#cont1 .cont1{}
+#cont1 .cont1 div{
+    position: relative;
+}
+#cont1 .cont1 div > img{
+    border-radius: 20px;
+}
+#cont1 .cont1 div > span{
+    display: block;
+    width: 374px;
+    height: 380px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+#cont1 .cont1 div:hover > span{
+    opacity: 1;
+}
+#cont1 .cont1 .slick-prev{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: -40px;
+    top: 170px;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#cont1 .cont1 .slick-prev::after{
+    content: "\f053";
+    font: var(--fa-font-solid);
+    font-size: 30px;
+    color: #666;
+    position: absolute;
+    left: 10px;
+    top: 6px;
+}
+#cont1 .cont1 .slick-next{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: -2px;
+    top: 170px;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 0;
+    cursor: pointer;
+    border-radius: 50%;
+}
+#cont1 .cont1 .slick-next::after{
+    content: "\f054";
+    font: var(--fa-font-solid);
+    font-size: 30px;
+    color: #666;
+    position: absolute;
+    right: 10px;
+    top: 6px;
+}
+#cont1 .cont1 .slick-dots{
+    display: block;
+    position: absolute;
+    bottom: -35px;
+    left: 525px;
+}
+#cont1 .cont1 .slick-dots > li{
+    float: left;
+    margin-right: 44px;
+}
+#cont1 .cont1 .slick-dots > li > button{
+    width: 20px;
+    height: 20px;
+    border: 0;
+    border-radius: 50%;
+    background-color: #ebebeb;
+    text-indent: -9999px;
+    cursor: pointer;
+}
+#cont1 .cont1 .slick-dots > li.slick-active > button{
+    background-color: #ddd;
+}
+#cont2{
+    height: 480px;
+    /* background-color: #ccc; */
+}
+#cont2 .cont2-1{
+    float: left;
+    width: 522px;
+    height: 460px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+}
+#cont2 .cont2-1 > img{
+    transition: all 0.3s;
+}
+#cont2 .cont2-1 > img:hover{
+    transform: scale(1.05);
+}
+#cont2 .cont2-1 > p{
+    position: absolute;
+    font-size: 30px;
+    bottom: 75px;
+    right: 30px;
+    font-weight: 800;
+    color: #fff;
+    font-size: 36px;
+    text-shadow: 1px 1px 5px #000;
+}
+#cont2 .cont2-1 > a{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 18px;
+    background-color: #fff;
+    color: #ae2cf1;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid #ae2cf1;
+    border-radius: 30px;
+    transition: all 0.4s;
+}
+#cont2 .cont2-1 > a:hover{
+    background-image: linear-gradient(90deg,#7776ff,#ae2cf1);
+    border: 1px solid rgba(0, 0, 0, 0);
+    color: #fff;
+}
+#cont2 .cont2-2{
+    float: right;
+    width: 739px;
+    height: 460px;
+    padding: 20px;
+    background-color: #ebebeb;
+    border-radius: 20px;
+}
+#cont2 .cont2-2 .tabmenu{
+    width: 739px;
+    height: 50px;
+    float: left;
+}
+#cont2 .cont2-2 .tabmenu .tabbtn{}
+#cont2 .cont2-2 .tabmenu .tabbtn > ul{}
+#cont2 .cont2-2 .tabmenu .tabbtn > ul > li{}
+#cont2 .cont2-2 .tabmenu .tabbtn > ul > li > a{
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    float: left;
+    font-size: 30px;
+    font-weight: 800;
+    color: #999;
+}
+#cont2 .cont2-2 .tabmenu .tabbtn > ul > li.active > a{
+    color: #333;
+}
+#cont2 .cont2-2 .tabmenu .tabbtn .tabcont{
+    width: 700px;
+    height: 360px;
+    float: left;
+    padding: 20px;
+    border-top: 1px solid #999;
+    margin-top: 15px;
+}
+#cont2 .cont2-2 .tabmenu .tabbtn .tabcont .news{}
+#cont2 .cont2-2 .tabmenu .tabbtn .tabcont .news > ul{}
+#cont2 .cont2-2 .tabmenu .tabbtn .tabcont .news > ul > li{}
+#cont2 .cont2-2 .tabmenu .tabbtn .tabcont .news > ul > li > a{
+    width: 70%;
+    font-size: 24px;
+    float: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-bottom: 12px;
+    font-weight: 400;
+}
+#cont2 .cont2-2 .tabmenu .tabbtn .tabcont .news > ul > li > span{
+    width: 25%;
+    font-size: 24px;
+    float: right;
+    text-align: right;
+    padding-bottom: 12px;
+    color: #333;
+    font-weight: 400;
+}
+#cont2 .cont2-2 .tabmenu .tabbtn .tabcont .introduce{}
+#cont2 .cont2-2 .tabmenu .tabbtn .tabcont .introduce .int_top{
+    width: 660px;
+    height: 160px;
+    display: flex;
+}
+#cont2 .cont2-2 .tabmenu .tabbtn .tabcont .introduce .int_top > div{
+    width: 145px;
+    height: 150px;
+    margin-right: 27px;
+    position: relative;
+}
+#cont2 .cont2-2 .tabmenu .tabbtn .tabcont .introduce .int_top > div:last-child{
+    margin-right: 0;
+}
+#cont2 .cont2-2 .tabmenu .tabbtn .tabcont .introduce .int_top > div > img{
+    border-radius: 10px;
+}
+#cont2 .cont2-2 .tabmenu .tabbtn .tabcont .introduce .int_top > div > span{
+    display: block;
+    width: 145px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    text-align: center;
+    line-height: 150px;
+    font-size: 20px;
+    opacity: 0;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+#cont2 .cont2-2 .tabmenu .tabbtn .tabcont .introduce .int_top > div:hover > span{
+    opacity: 1;
+}
+#cont2 .cont2-2 .tabmenu .tabbtn .tabcont .introduce .int_bot{
+    width: 660px;
+    height: 160px;
+    display: flex;
+    padding-top: 10px;
+}
+#cont2 .cont2-2 .tabmenu .tabbtn .tabcont .introduce .int_bot > div{
+    width: 145px;
+    height: 150px;
+    margin-right: 27px;
+    position: relative;
+}
+#cont2 .cont2-2 .tabmenu .tabbtn .tabcont .introduce .int_bot > div:last-child{
+    margin-right: 0;
+}
+#cont2 .cont2-2 .tabmenu .tabbtn .tabcont .introduce .int_bot > div > img{
+    border-radius: 10px;
+}
+#cont2 .cont2-2 .tabmenu .tabbtn .tabcont .introduce .int_bot > div > span{
+    display: block;
+    width: 145px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    text-align: center;
+    line-height: 150px;
+    font-size: 20px;
+    opacity: 0;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+#cont2 .cont2-2 .tabmenu .tabbtn .tabcont .introduce .int_bot > div:hover > span{
+    opacity: 1;
+}
+#cont3{
+    height: 480px;
+}
+#cont3 .cont3 div{
+    position: relative;
+}
+#cont3 .cont3 div img{}
+#cont3 .cont3 div .p1{
+    display: block;
+    position: absolute;
+    bottom: 230px;
+    right: 50px;
+    font-size: 36px;
+    color: #fff;
+    font-weight: 800;
+}
+#cont3 .cont3 div .a1{
+    width: 150px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    font-size: 18px;
+    color: #ae2cf1;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid #ae2cf1;
+    background-color: #fff;
+    border-radius: 30px;
+    transition: all 0.4s;
+}
+#cont3 .cont3 div .a1:hover{
+    background-image: linear-gradient(90deg,#7776ff,#ae2cf1);
+    border: 1px solid rgba(0, 0, 0, 0);
+    color: #fff;
+}
+#cont3 .cont3 div .a2{
+    width: 150px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    bottom: 50px;
+    right: 210px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    background-image: linear-gradient(90deg,#7776ff,#ae2cf1);
+    border-radius: 30px;
+    transition: all 0.4s;
+}
+#cont3 .cont3 div .a2:hover{
+    background-image: linear-gradient(90deg,#6767da,#8b23be);
+}
+#footer{
+    height: 200px;
+    background-color: #ebebeb;
+}
+#footer .f_menu{
+    height: 100px;
+    display: flex;
+    border-bottom: 1px solid #cccccc;
+    justify-content: space-around;
+    align-items: center;
+}
+#footer .f_menu > a{
+    font-weight: 900;
+    font-size: 18px;
+    
+}
+#footer .f_copy{
+    height: 100px;
+    display: flex;
+    padding: 10px;
+}
+#footer .f_copy > .f_left{
+    font-size: 12px;
+    color: #999;
+    width: 50%;
+    float: left;
+}
+#footer .f_copy > .f_left > span{
+    display: block;
+}
+#footer .f_copy > .f_left > em{
+    font-style: normal;
+}
+#footer .f_copy > .f_right{
+    width: 50%;
+    float: right;
+    position: relative;
+}
+#footer .f_copy > .f_right > .copy_m{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+#footer .f_copy > .f_right > .copy_m > a{
+    margin-right: 15px;
+    color: #999;
+    font-size: 12px;
+}
+#footer .f_copy > .f_right > .copy_m > a:last-child{
+    margin-right: 0;
+}
